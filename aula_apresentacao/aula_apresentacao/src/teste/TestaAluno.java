@@ -5,7 +5,7 @@
  */
 package teste;
 
-import entidade.Aluno;
+import aula_01.Aluno;
 import javax.swing.JOptionPane;
 
 /**
@@ -19,6 +19,7 @@ public class TestaAluno {
             aluno.setNome(JOptionPane.showInputDialog("insira seu nome :"));
         
         
+            aluno.setSobrenome(JOptionPane.showInputDialog("insira seu sobrenome :"));
             aluno.setIdade(JOptionPane.showInputDialog("insira seu idade :"));
 
         float salario = Float.parseFloat(JOptionPane.
@@ -30,6 +31,7 @@ public class TestaAluno {
                 aluno.setCpf(cpf);
 
     JOptionPane.showMessageDialog(null, "nome completo: " + aluno.getNome()
+            + " " + aluno.getSobrenome() + "\nidade: " + aluno.getIdade()
             + "\nsálario: " + aluno.getSalario() + "\ncpf: " + aluno.getCpf());
    }
 
